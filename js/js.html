@@ -1,0 +1,24 @@
+<html>
+  <head>
+  </head>
+
+  <body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+     <script>
+      var myh2 = $('h2');
+      var onclickfunction = function() {
+        var h2Element = $('h2');
+        h2Element.html("I just got clicked");
+      };
+      myh2.click(onclickfunction);
+
+      var pageHasLoaded = function() {
+        var h2Element = $('h2');
+        h2Element.html("Niiiiiiice");
+      };
+      $(pageHasLoaded);
+      </script> 
+    <h1>Hello!</h1>
+    <h2>what's up</h2>
+  </body>
+</html>

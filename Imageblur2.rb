@@ -10,7 +10,7 @@ class Image
     end
   end
 
-  def blur(distance)
+  def blur
     temp_array = Marshal.load(Marshal.dump(image))
     image.each_with_index do |row, row_index| 
       row.each_with_index do |column, col_index| 
@@ -35,7 +35,7 @@ image = Image.new([
   [0, 0, 0, 1],
   [0, 0, 0, 0],
 ])
-image.blur(3)
+image.blur
 image.output_image
 
 
