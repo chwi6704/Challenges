@@ -15,3 +15,12 @@ class Sleigh
     
   end
 end
+
+class Sleigh
+  def authenticate(name, password)
+    if name == "Snata Claus" && password == "Ho Ho Ho!"
+    puts "Acess granted"
+    else
+    puts "Acess denied"
+  end
+end
