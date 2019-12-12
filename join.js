@@ -4,9 +4,9 @@ var _ = {
   // Implements:
   // https://lodash.com/docs#join
   join: (array, separator = ',') => {
-    // write code to implement method here
+    joined = value.join(',')
   }
-}
+};
 
 
 const value = _.join(["hello", "goodbye"], ", ")

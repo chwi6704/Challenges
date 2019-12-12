@@ -4,7 +4,7 @@ module Luhn
     sum = 0
     reversed_num.each_with_index do |num, i|
       num = num.to_i 
-      if i.even? 
+      if i.odd? 
         num *= 2 
         if num >= 10 
           num -= 9 
@@ -17,4 +17,4 @@ module Luhn
   end
 end
 
-puts Luhn.is_valid?("4070590981311")
+puts Luhn.is_valid?("4194560385008504")
